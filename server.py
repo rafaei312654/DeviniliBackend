@@ -276,5 +276,5 @@ async def shutdown_db_client():
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8020))  # Railway define PORT dinamicamente
+    port = int(os.environ.get("PORT", 8080))  # Railway define PORT dinamicamente
     uvicorn.run("server:app", host="0.0.0.0", port=port, reload=False)
